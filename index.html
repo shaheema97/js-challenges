@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Challenges</title>
+</head>
+<body>
+<!-- CHALLENGE 1 -->
+    <div class="container-1">
+        <h1>How old are you in dayss?</h1>
+       <div class="flex-container-1">
+            <div >
+                <button class="btn btn-primary" onclick="getAgdays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick=" reset()">Cancel</button>
+            </div>
+        </div>
+        <div class="flex-container-1-2">
+            <div class="box1" id="location">
+
+            </div>
+        </div>
+    </div>
+<!-- CHALLENGE 2 -->
+    <div class="container-2">
+        <h1>Face Generator</h1>
+        <div class="flex-container-2">
+            <div>
+                <button class="btn btn-success" onclick="generateFace()">Click to Generate</button>
+            </div>
+        </div>
+        <div class="flex-container-2-1" id="face">
+            
+        </div>
+
+    </div> 
+<!-- CHALLENGE 3 -->
+    <div class="container-3">
+        <h1>Rock,Paper,Scissors Game</h1>
+        <div class="flex-container-3" id="imgbox">
+            <img src="img/rock.png" alt="rock" height="200px" width="150px" id="rock" onclick="rpsGame(this)">
+            <img src="img/paper.jpg" alt="paper" height="200px" width="150px" id="paper" onclick="rpsGame(this)">
+            <img src="img/scissor.jpg" alt="scissor" height="200px" width="150px" id="scissor" onclick="rpsGame(this)">
+        </div>
+
+    </div>
+<!-- CHALLENGE 5 -->
+    <div class="container-3">
+        <h1>Black Jack</h1>
+            <div class="flex-container-4-1">
+                <div id="MYscore">
+                    <h2>You : <span id="myscore">0</span></h2>
+                </div>
+                <div id="DEALscore" >
+                    <h2>Dealer : <span id="dealerscore">0</span></h2>
+                </div>
+            </div>
+            <div class="flex-container-4-2">
+                <div >
+                    <button class="btn-lg btn-primary" id="hit" onclick="blackJackHit()">Hit</button>
+                    <button class="btn-lg btn-warning" id="stand" >Stand</button>
+                    <button class="btn-lg btn-danger" id="deal" onclick=" blackJackdeal()">Deal</button>
+                </div>
+            </div>
+            <div class="flex-container-4-3">
+                <table>
+                    <tr>
+                        <th>Win</th>
+                        <th>Lose</th>
+                        <th>Draw</th>
+                    </tr>
+                    <tr>
+                        <td><span id="win">0</span></td>
+                        <td><span id="lose">0</span></td>
+                        <td><span id="draw">0</span></td>
+                    </tr>
+                </table>
+            </div>
+
+    </div>
+
+
+    
+    
+
+
+    <script src="home.js"></script>
+
+</body>
+</html>
